@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0e">
+  <title>La Cosa Nostra | Tournament Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="crest">♠</div>
+        <div>
+          <small>WELCOME TO THE FAMILY</small>
+          <strong>LA COSA NOSTRA</strong>
+          <span>TOURNAMENT CONTROL</span>
+        </div>
+      </div>
+
+      <nav id="nav">
+        <button data-page="dashboard" class="active">◈ &nbsp; Dashboard</button>
+        <button data-page="players">♙ &nbsp; Registration</button>
+        <button data-page="bracket">♜ &nbsp; Tournament Bracket</button>
+        <button data-page="matches">◎ &nbsp; Match Control</button>
+        <button data-page="display">▣ &nbsp; TV Spectator Mode</button>
+      </nav>
+
+      <div class="sidefoot">
+        <span class="dot"></span> TOURNAMENT SYSTEM
+        <small>Built by NextGen NTS</small>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <div class="eyebrow">LA COSA NOSTRA PTA / THE FAMILY CUP</div>
+          <h1 id="page-title">Tournament Dashboard</h1>
+        </div>
+
+        <div class="header-actions">
+          <label class="division-picker" for="division-select">
+            DIVISION
+            <select id="division-select">
+              <option value="men">Men’s Tournament</option>
+              <option value="ladies">Ladies’ Tournament</option>
+            </select>
+          </label>
+          <button class="ghost" id="export-btn">Export data</button>
+        </div>
+      </header>
+
+      <div id="content"></div>
+    </main>
+
+  </div>
+
+  <div id="toast" role="status"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
